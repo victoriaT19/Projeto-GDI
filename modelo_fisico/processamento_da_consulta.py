@@ -5,7 +5,7 @@ class DatabaseManager:
         self.db = sqlite3.connect(db_name)
         self.cursor = self.db.cursor()
     
-    def ler_arquivo(self, file_name='clientes_sp.sql'):
+    def ler_arquivo(self, file_name='consultas.sql'):
         try:
             with open(file_name, 'rt', encoding='utf-8') as f:
                 dados = f.read()
